@@ -107,15 +107,15 @@ const STAGES = [
         d: "Tính trước tổng từ đầu dãy để trả lời tổng đoạn trong O(1).",
         s: "Truy vấn tổng đoạn [l, r].",
         tags: ["pre[i]", "pre[r] − pre[l−1]", "Cộng dồn + map"], lv: "Cơ bản" },
-      { t: "Cửa sổ trượt (Sliding Window)", u: "https://claude.ai/artifact/TQz1hwT4Zf6UcDtZ4cxbG1",
+      { t: "Cửa sổ trượt (Sliding Window)", u: "CuaSoTruot",
         d: "Xử lý các đoạn liên tiếp độ dài cố định bằng cách bỏ một số ra, thêm một số vào.",
         s: "Tổng lớn nhất của k phần tử liên tiếp.",
         tags: ["Cửa sổ cố định", "Tần suất", "deque"], lv: "Cơ bản" },
-      { t: "Hai con trỏ (Two Pointers)", u: "https://claude.ai/artifact/VRbtPBAD9BH6TG4fVfw4JS",
+      { t: "Hai con trỏ (Two Pointers)", u: "HaiConTro",
         d: "Hai chỉ số cùng di chuyển theo quy tắc đơn điệu: từ hai đầu vào giữa, hoặc cùng chiều.",
         s: "Tìm cặp có tổng K trên dãy đã sắp xếp.",
         tags: ["Hai đầu", "Cùng chiều", "Cửa sổ co giãn"], lv: "Trung bình" },
-      { t: "Mảng hiệu (Difference Array)", u: "https://claude.ai/artifact/C4zPbhVVCsuonVQ85bVFKj",
+      { t: "Mảng hiệu (Difference Array)", u: "MangHieu",
         d: "Phép ngược của mảng cộng dồn: cộng một giá trị vào cả đoạn chỉ với hai phép tính.",
         s: "Cộng x vào đoạn [l, r], in mảng cuối cùng.",
         tags: ["d[i] = a[i] − a[i−1]", "Cập nhật đoạn"], lv: "Trung bình" }
@@ -125,15 +125,15 @@ const STAGES = [
     title: "Sắp xếp, tìm kiếm và tra cứu",
     desc: "Tổ chức dữ liệu để tìm và đếm nhanh.",
     pages: [
-      { t: "Sắp xếp và ứng dụng", u: "https://claude.ai/artifact/Uc5mZYvuy9RCyFGPf8D56H",
+      { t: "Sắp xếp và ứng dụng", u: "SapXep",
         d: "Mảng đếm tần suất, counting sort, hàm sort của C++ và sắp xếp theo tiêu chí riêng.",
         s: "Tìm giá trị xuất hiện nhiều nhất.",
         tags: ["Mảng đếm", "sort", "Hàm so sánh", "struct/pair"], lv: "Cơ bản" },
-      { t: "Tìm kiếm nhị phân (Binary Search)", u: "https://claude.ai/artifact/XfthGCqBoUnV1Au9dSs212",
+      { t: "Tìm kiếm nhị phân (Binary Search)", u: "TimKiemNhiPhan",
         d: "Mỗi bước loại một nửa; từ tìm trong mảng đến nhị phân theo đáp án.",
         s: "Tìm x trong dãy tăng trong O(log n).",
         tags: ["lower_bound", "upper_bound", "Nhị phân theo đáp án"], lv: "Trung bình" },
-      { t: "Đếm và tra cứu", u: "https://claude.ai/artifact/5QKKfe6hD5Lymx1vNkpTnp",
+      { t: "Đếm và tra cứu", u: "DemVaTraCuu",
         d: "Từ mảng đếm đến map, set và băm: mỗi cấu trúc ra đời vì cấu trúc trước đó hết dùng được.",
         s: "x xuất hiện bao nhiêu lần, khi phần tử đổi dần từ số nhỏ đến chuỗi.",
         tags: ["Offset", "map", "set", "unordered_map", "Băm"], lv: "Trung bình" }
@@ -143,11 +143,11 @@ const STAGES = [
     title: "Mở rộng cấu trúc dữ liệu",
     desc: "Thêm một chiều cho mảng, và hai cấu trúc xếp hàng quen thuộc.",
     pages: [
-      { t: "Mảng hai chiều và tổng tiền tố 2D", u: "https://claude.ai/artifact/94JXN2WGgKCRuus4iQ4BKL",
+      { t: "Mảng hai chiều và tổng tiền tố 2D", u: "Mang2D",
         d: "Bảng hàng và cột, cách duyệt, và tổng một hình chữ nhật trong O(1).",
         s: "Tổng hình chữ nhật với q truy vấn.",
         tags: ["a[i][j]", "Duyệt 4 hướng", "Bao hàm - loại trừ", "Mảng hiệu 2D"], lv: "Trung bình" },
-      { t: "Ngăn xếp, hàng đợi và ngăn xếp đơn điệu", u: "https://claude.ai/artifact/W4pAjLCGSbzT6m3ACbNu1Q",
+      { t: "Ngăn xếp, hàng đợi và ngăn xếp đơn điệu", u: "NganXep-HangDoi",
         d: "LIFO và FIFO, deque, và kỹ thuật ngăn xếp đơn điệu cho bài toán phần tử kế tiếp.",
         s: "Dãy ngoặc hợp lệ; phần tử lớn hơn kế tiếp.",
         tags: ["stack", "queue", "deque", "Ngăn xếp đơn điệu"], lv: "Trung bình" }
@@ -157,15 +157,15 @@ const STAGES = [
     title: "Quy hoạch động và tham lam",
     desc: "Hai cách tối ưu hóa: thử mọi lựa chọn và ghi nhớ, hoặc chọn tốt nhất tại mỗi bước.",
     pages: [
-      { t: "Quy hoạch động cơ bản", u: "https://claude.ai/artifact/VUcYdJtnjsjqoVZC3uAbVB",
+      { t: "Quy hoạch động cơ bản", u: "QuyHoachDong",
         d: "Giải mỗi bài toán con đúng một lần và nhớ lại kết quả; bốn câu hỏi để lập công thức.",
         s: "Leo cầu thang; chọn không kề nhau; đổi tiền; cái túi 0/1.",
         tags: ["dp[i]", "Công thức truy hồi", "Cái túi 0/1"], lv: "Trung bình" },
-      { t: "Tham lam (Greedy)", u: "https://claude.ai/artifact/CzqiFr8hXvXKqAEkxnR3Dg",
+      { t: "Tham lam (Greedy)", u: "ThamLam",
         d: "Mỗi bước chọn lựa chọn tốt nhất; khi nào đúng, khi nào sai, và cách chứng minh bằng đổi chỗ.",
         s: "Đổi tiền; tổng thời gian chờ nhỏ nhất.",
         tags: ["Tiêu chí", "Đổi chỗ", "Sắp xếp rồi duyệt"], lv: "Trung bình" },
-      { t: "Quy hoạch động nâng cao", u: "https://claude.ai/artifact/XPdhG175SacicyKe86Sg7P",
+      { t: "Quy hoạch động nâng cao", u: "QHD-NangCao",
         d: "Trạng thái có hai tham số: bảng DP hai chiều, dãy con chung dài nhất, khoảng cách chỉnh sửa.",
         s: "Đường đi nhỏ nhất trên bảng; LCS.",
         tags: ["dp[i][j]", "LCS", "Edit distance", "Truy vết"], lv: "Nâng cao" }
@@ -175,7 +175,7 @@ const STAGES = [
     title: "Ôn tập",
     desc: "Tổng kết toàn bộ lộ trình và luyện chọn đúng kỹ thuật.",
     pages: [
-      { t: "Ôn tập tổng hợp", u: "https://claude.ai/artifact/7NkQCDpfkx2Dt1uDe98Ja9",
+      { t: "Ôn tập tổng hợp", u: "OnTap",
         d: "Bản đồ dấu hiệu → kỹ thuật, bảng giới hạn → độ phức tạp, đề nhận dạng và bài kết hợp nhiều kỹ thuật.",
         s: "12 đề nhận dạng và 6 bài tổng hợp.",
         tags: ["Nhận dạng", "Độ phức tạp", "Bài kết hợp"], lv: "Tổng hợp" }
@@ -185,7 +185,7 @@ const STAGES = [
     title: "Số học (mạch riêng)",
     desc: "Mạch học song song với các giai đoạn trên, chỉ cần biết vòng lặp và mảng một chiều: ước, số nguyên tố, UCLN, modulo.",
     pages: [
-      { t: "Chia hết, ước và bội", u: "https://claude.ai/artifact/RL1rmtPxjgCcgmSpGtdVR3",
+      { t: "Chia hết, ước và bội", u: "ChiaHet-UocVaBoi",
         d: "Ước đi theo cặp: đếm và liệt kê ước của một số lớn chỉ với căn bậc hai của n phép thử.",
         s: "Đếm số ước của n với n ≤ 10^12.",
         tags: ["Ước và bội", "Cặp ước", "O(√n)", "Số chính phương"], lv: "Cơ bản" }
